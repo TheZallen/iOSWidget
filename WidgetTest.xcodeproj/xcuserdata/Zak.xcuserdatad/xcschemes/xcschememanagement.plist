@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FixTheCity.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>WidgetTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>318D05301B1E8613002F3285</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>318D05441B1E8643002F3285</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -15,6 +15,11 @@
 		318D05291B1E8613002F3285 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318D05281B1E8613002F3285 /* Images.xcassets */; };
 		318D052C1B1E8613002F3285 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 318D052A1B1E8613002F3285 /* LaunchScreen.xib */; };
 		318D05381B1E8613002F3285 /* WidgetTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D05371B1E8613002F3285 /* WidgetTestTests.m */; };
+		318D05481B1E8643002F3285 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318D05471B1E8643002F3285 /* NotificationCenter.framework */; };
+		318D054E1B1E8643002F3285 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 318D054D1B1E8643002F3285 /* TodayViewController.m */; };
+		318D05501B1E8643002F3285 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318D054F1B1E8643002F3285 /* MainInterface.storyboard */; };
+		318D05531B1E8643002F3285 /* FixTheCity.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 318D05451B1E8643002F3285 /* FixTheCity.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		318D05591B1E8AAA002F3285 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318D05581B1E8AAA002F3285 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +30,28 @@
 			remoteGlobalIDString = 318D05141B1E8613002F3285;
 			remoteInfo = WidgetTest;
 		};
+		318D05511B1E8643002F3285 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 318D050D1B1E8613002F3285 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 318D05441B1E8643002F3285;
+			remoteInfo = FixTheCity;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		318D05571B1E8643002F3285 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				318D05531B1E8643002F3285 /* FixTheCity.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		318D05151B1E8613002F3285 /* WidgetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +68,13 @@
 		318D05311B1E8613002F3285 /* WidgetTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WidgetTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		318D05361B1E8613002F3285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		318D05371B1E8613002F3285 /* WidgetTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WidgetTestTests.m; sourceTree = "<group>"; };
+		318D05451B1E8643002F3285 /* FixTheCity.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FixTheCity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		318D05471B1E8643002F3285 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		318D054B1B1E8643002F3285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		318D054C1B1E8643002F3285 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		318D054D1B1E8643002F3285 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		318D054F1B1E8643002F3285 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		318D05581B1E8AAA002F3285 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +92,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		318D05421B1E8643002F3285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318D05591B1E8AAA002F3285 /* AudioToolbox.framework in Frameworks */,
+				318D05481B1E8643002F3285 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +109,8 @@
 			children = (
 				318D05171B1E8613002F3285 /* WidgetTest */,
 				318D05341B1E8613002F3285 /* WidgetTestTests */,
+				318D05491B1E8643002F3285 /* FixTheCity */,
+				318D05461B1E8643002F3285 /* Frameworks */,
 				318D05161B1E8613002F3285 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +120,7 @@
 			children = (
 				318D05151B1E8613002F3285 /* WidgetTest.app */,
 				318D05311B1E8613002F3285 /* WidgetTestTests.xctest */,
+				318D05451B1E8643002F3285 /* FixTheCity.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +167,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		318D05461B1E8643002F3285 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				318D05581B1E8AAA002F3285 /* AudioToolbox.framework */,
+				318D05471B1E8643002F3285 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		318D05491B1E8643002F3285 /* FixTheCity */ = {
+			isa = PBXGroup;
+			children = (
+				318D054C1B1E8643002F3285 /* TodayViewController.h */,
+				318D054D1B1E8643002F3285 /* TodayViewController.m */,
+				318D054F1B1E8643002F3285 /* MainInterface.storyboard */,
+				318D054A1B1E8643002F3285 /* Supporting Files */,
+			);
+			path = FixTheCity;
+			sourceTree = "<group>";
+		};
+		318D054A1B1E8643002F3285 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				318D054B1B1E8643002F3285 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,10 +205,12 @@
 				318D05111B1E8613002F3285 /* Sources */,
 				318D05121B1E8613002F3285 /* Frameworks */,
 				318D05131B1E8613002F3285 /* Resources */,
+				318D05571B1E8643002F3285 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				318D05521B1E8643002F3285 /* PBXTargetDependency */,
 			);
 			name = WidgetTest;
 			productName = WidgetTest;
@@ -160,6 +235,23 @@
 			productReference = 318D05311B1E8613002F3285 /* WidgetTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		318D05441B1E8643002F3285 /* FixTheCity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 318D05541B1E8643002F3285 /* Build configuration list for PBXNativeTarget "FixTheCity" */;
+			buildPhases = (
+				318D05411B1E8643002F3285 /* Sources */,
+				318D05421B1E8643002F3285 /* Frameworks */,
+				318D05431B1E8643002F3285 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FixTheCity;
+			productName = FixTheCity;
+			productReference = 318D05451B1E8643002F3285 /* FixTheCity.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +267,9 @@
 					318D05301B1E8613002F3285 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 318D05141B1E8613002F3285;
+					};
+					318D05441B1E8643002F3285 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -193,6 +288,7 @@
 			targets = (
 				318D05141B1E8613002F3285 /* WidgetTest */,
 				318D05301B1E8613002F3285 /* WidgetTestTests */,
+				318D05441B1E8643002F3285 /* FixTheCity */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +308,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318D05431B1E8643002F3285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318D05501B1E8643002F3285 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +341,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		318D05411B1E8643002F3285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				318D054E1B1E8643002F3285 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -244,6 +356,11 @@
 			isa = PBXTargetDependency;
 			target = 318D05141B1E8613002F3285 /* WidgetTest */;
 			targetProxy = 318D05321B1E8613002F3285 /* PBXContainerItemProxy */;
+		};
+		318D05521B1E8643002F3285 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 318D05441B1E8643002F3285 /* FixTheCity */;
+			targetProxy = 318D05511B1E8643002F3285 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -401,6 +518,30 @@
 			};
 			name = Release;
 		};
+		318D05551B1E8643002F3285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FixTheCity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		318D05561B1E8643002F3285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FixTheCity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -426,6 +567,14 @@
 			buildConfigurations = (
 				318D053F1B1E8613002F3285 /* Debug */,
 				318D05401B1E8613002F3285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		318D05541B1E8643002F3285 /* Build configuration list for PBXNativeTarget "FixTheCity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				318D05551B1E8643002F3285 /* Debug */,
+				318D05561B1E8643002F3285 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
